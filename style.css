@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+  }
+  body{
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+    font-size: 1.15em; 
+  }
+
+.Link{
+    text-decoration: none;
+}
+
+.Link:hover{
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+
+#header-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3.5em;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid lightgrey;
+}
+
+#logo-icon{
+    margin: auto 5%;
+}
+
+
+.header-links{    
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto 12%;
+    width: 45%;  
+}
+
+.header-links a{
+    color: black;
+}
+
+
+
+footer{
+    padding: 0;
+    height: 3.5em;
+    border: 1px solid transparent;
+  }
+  
+  footer p{
+    width: 80%;
+    font-size: .8em;
+    margin: 2% 0 auto 2%;
+  }
+  
+
+
+
+#reg_form{
+    display: block;
+    width: 50%;
+    margin: 15% auto;
+}
+
+#reg_form > fieldset {    
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1em;
+    margin: 0;
+    width: 100%;
+    text-align: left;
+    padding: 0;
+}
+
+#reg_form > fieldset > label{
+    display: block;
+    margin: 8% auto 0 auto;
+    width: 55%;
+}
+
+#reg_form > fieldset > input{
+    display: block;
+    margin: 0 auto 0 auto;
+    width: 55%;
+    height: 2em;
+    padding: 1em;
+}
+
+#password_requirements{
+    font-size: .8em; 
+}
+
+.correct_password{
+    display: block;
+    margin: 2% 0 0 30%;
+}
+
+.incorrect_password{
+    display: block;
+}
+
+#reg_submit{
+    margin: 5% auto;
+    width: 6em;
+    height: 3em;
+}
+
+@media screen and (max-width: 750px){
+    #reg_form{
+        width: 90%;
+    }
+
+    footer{
+        margin-bottom: -500%;
+        bottom: 0;
+      }
+}

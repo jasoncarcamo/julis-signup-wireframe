@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport"  content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" type="text/css" href="./style.css"/>
+    </head>
+    <body>
+
+        <header>
+            <nav id="header-nav">
+                <div id="logo-icon"><Link to="/" >Logo</Link></div>
+
+                <ul class="header-links">
+                    <a href="/register" class="Link">Sign Up</a>
+                    <a href="/login" class="Link"> Log In</a>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="reg_section">
+                <form onSubmit={this.handleSubmit} id="reg_form">
+                    <fieldset>
+                    
+
+                        <label for="reg_first_name">* First Name:</label>
+                        <input type="text" id="reg_first_name" required/>
+
+                        <label for="reg_last_name">* Last Name:</label>
+                        <input type="text" id="reg_last_name" required/>
+
+
+                        <label for="reg_email">* Email:</label>
+                        <input type="text" id="reg_email" required/>
+
+                        <label for="reg_password">* Enter a password: <span id="password_requirements">Password must contain one upper case, lower case, number and special character</span></label>
+                        <input type="password" id="reg_password" required/>
+                        
+                        <label for="re_password_confirm">* Retype password:
+                        </label>
+                        <input type="password" required></input>    
+
+                        <label for="reg_home_number">Home Number:</label>
+                        <input text="text" id="reg_phone_number"></input>
+
+                        <label for="reg_mobile_number">* Mobile Number:</label>
+                        <input type="text" id="reg_mobile_number" required/> 
+
+                        <label for="reg_address">* Address:</label>
+                        <input type="text" id="reg_address" />
+
+                        <label for="reg_city">* City:</label>
+                        <input type="text" id="reg_city" required/>
+
+                        <label for="reg_state">* State Region:</label>
+                        <input type="text" id="reg_state"required/>
+
+                        <label for="reg_zipcode">* Zip Code</label>
+                        <input type="text" id="reg_zipcode" required/>
+
+                        <button type="submit" id="reg_submit">Sign me up</button>
+                    </fieldset>
+                </form>
+            </section>
+
+            <footer>
+                <p>Copyright Julis Cleaning Company, All rights reserved</p>
+            </footer>
+
+    </body>
+</html>
